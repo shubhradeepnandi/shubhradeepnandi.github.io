@@ -1,0 +1,98 @@
+---
+title: "How To Prepare Data And Train Your Own Faster R-CNN Model"
+header:
+  teaser: projects/train-faster-rcnn/TBD.png
+categories:
+  - Project
+tags:
+  - machine-learning
+  - deep-learning
+  - caffe
+  - faster r-cnn
+  - faster rcnn
+  - gpu
+  - training
+  - data preparation
+  - object detection
+---
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+Hi guys! So I've been away for three months to do a project for my company, and unfortunately, in another prefecture. During that time, I received quite a lot of comments from you guys abou what I wrote before. Some said that my blog posts did help them a lot and told me to keep writing.
+To be honest, I was really really happy to hear that. And as long as my blog can be helpful, I will continue to write more and more posts (hope that they will be useful, too).
+Besides, I also received comments from you guys about the problems you came across while you were following my instructions. And I'm so sorry that I was so messed up with my work that I couldn't be any helpful during the past three months.
+
+So, let's get down to business. Among those comments I received, some of you asked me about how to train a Faster R-CNN model, using your own dataset. Obviously, you wouldn't make most out of it if you just stick with the pre-trained model. So this post I'm gonna guide you through steps to train your own Faster R-CNN model.
+
+Before we get started, make sure you have already set things up. It means that you have cloned from Faster R-CNN Github repository, compiled and successfully run the demo. Or, you probably want to take a look at my previous post, where I covered all the necessary steps I have just mentioned:
+
+* [Compiling and Running Faster R-CNN on Ubuntu (CPU Mode)](https://chunml.github.io/ChunML.github.io/project/Running-Faster-RCNN-Ubuntu/){:target="_blank"}
+
+In case you have a PC with GPU, which is strongly recommended... No, it's not just recommended. GPU is definitely a MUST if you want to train Faster R-CNN. And below is the link to setup Faster R-CNN with GPU and the problem I faced, which caused me unable to use cuDNN with Faster R-CNN:
+
+* [Solving problem when running Faster R-CNN on GTX 1070](https://chunml.github.io/ChunML.github.io/project/Problem-Faster-RCNN-GPU/){:target="_blank"}
+
+So now let's suppose you have successfully compiled and run the demo file. Next we will talk about how to make one step further: to train your own model.
+
+### Train Faster R-CNN with PASCAL VOC 2007 dataset
+
+One problem we may face when it comes to train Faster R-CNN is that the data preparation is somehow tiresome. So, it's a good idea to start training using the well-known PASCAL VOC datasets.
+The first reason is, the PASCAL VOC datasets contain everything we need: the images and all associated annotations. The second reason is, PASCAL VOC datasets were officially used in Object Detection/Localization challenges to evaluate competitors' model, and of course, Faster R-CNN is among those, so the source code provided by its authors is, obviously enough, implemented to use PASCAL VOC dataset (version 2007) by default.
+It means that using PASCAL VOC dataset, we can start to train the model without having to modify a single line of code! After make sure that the training code actually works, we can make further steps to train our own dataset.
+
+So, how can we train the Faster R-CNN using PASCAL VOL dataset? If you have read through the README file on Ross Girshick's py-faster-rcnn repository (link [here](https://github.com/rbgirshick/py-faster-rcnn) in case you want to take a look), you might already see his instructions on how to do that. But anyway, I will rewrite the necessary steps here, with some more details.
+
+First, you need to download the PASCAL VOC dataset. We're gonna use the version used in 2007 as pointed by the README file, other versions work well, of course. You can download to some specific folder, then create a symlink from Faster R-CNN data folder just like Ross's instruction. But in this post, for sake of simplicity, I will download directly to Faster R-CNN's *data* folder:
+
+{% highlight Bash shell scripts %}
+cd $FasterRCNN/data #FasterRCNN is the root folder where you cloned py-faster-rcnn
+wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar && wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar && wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCdevkit_08-Jun-2007.tar
+{% endhighlight %}
+
+I recommend that you put all the download command together like above, so that they will be executed one after another while you can go take a nap :)
+
+Alright, it's gonna take a while for the download to finish. When the process is done, just go ahead and untar all of them:
+
+{% highlight Bash shell scripts %}
+tar xvf VOCtrainval_06-Nov-2007.tar
+tar xvf VOCtest_06-Nov-2007.tar
+tar xvf VOCdevkit_08-Jun-2007.tar
+{% endhighlight %}
+
+Next, we're gonna need the pre-trained models (in this case the ZF and VGG16 models). I assume that you have at least read the paper of Faster R-CNN twice, to understand briefly the idea behind their experiment. They didn't train from scratch, of course. No one wants global warming to get any worse, right? :)
+
+{% highlight Bash shell scripts %}
+cd $FasterRCNN # Remember that all scripts must be executed from the root folder of Faster R-CNN
+./data/scripts/fetch_imagenet_models.sh
+{% endhighlight %}
+
+It's gonna take another while, so please be patient. After the models are downloaded, you can start to train the Faster R-CNN right away. Let's see how to do this:
+
+{% highlight Bash shell scripts %}
+cd $FasterRCNN
+./experiments/scripts/faster_rcnn_alt_opt.sh [GPU_ID] [NET] [--set ...]
+# GPU_ID is the GPU you want to train on
+# NET in {ZF, VGG_CNN_M_1024, VGG16} is the network arch to use
+# --set ... allows you to specify fast_rcnn.config options, e.g.
+#   --set EXP_DIR seed_rng1701 RNG_SEED 1701
+{% endhighlight %}
+
+Above is the instruction I grabbed on Ross's Faster R-CNN repository. We can see that we must provide some necessary parameters in order to execute the train command, such as GPU's id (which is usually 0 if you have only one GPU), the pre-trained model to use (ZF or VGG16).
+But that's just not enough. If you run the command below:
+
+{% highlight Bash shell scripts %}
+cd $FasterRCNN
+./experiments/scripts/faster_rcnn_alt_opt.sh 0 VGG16
+{% endhighlight %}
+
+Then an error will occur, telling you that you're missing the data specification. Of course, you can easily read the script to know the appropriate parameter, but I'll save you some time by showing you the right command right below:
+
+{% highlight Bash shell scripts %}
+cd $FasterRCNN
+./experiments/scripts/faster_rcnn_alt_opt.sh 0 VGG16 pascal_voc
+{% endhighlight %}
+
+The training process should be running now, here's the screenshot of mine:
+
+![pascal_train](/images/projects/train-faster-rcnn/pascal_train.png)
+
+If you made it till this step, then congratulations! We're now ready to move to the next step: to train Faster R-CNN models using our own set of data.
+

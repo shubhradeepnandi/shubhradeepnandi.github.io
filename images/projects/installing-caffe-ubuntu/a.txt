@@ -1,0 +1,4 @@
+./build/tools/caffe time --model=examples/mnist/lenet_train_test.prototxt
+./build/tools/caffe time --model=examples/mnist/lenet_train_test.prototxt --gpu 0
+./build/tools/caffe time --model=examples/cifar10/cifar10_full_train_test.prototxt
+./build/tools/caffe time --model=examples/cifar10/cifar10_full_train_test.prototxt --gpu 0

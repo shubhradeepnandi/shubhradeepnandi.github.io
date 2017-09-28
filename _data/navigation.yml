@@ -1,0 +1,43 @@
+# main links links
+main:
+  - title: "Machine Learning Tutorials"
+    url: https://chunml.github.io/tutorials
+    
+  - title: "My Project Page"
+    url: https://chunml.github.io/portfolio
+    
+  - title: "About"
+    url: /about/
+
+  - title: "Terms and Privacy Policy"
+    url: /terms/
+
+posts:
+  - title: Most Popular
+    children:
+      - title: "■ Creating a language translation model"
+        url: /project/Sequence-To-Sequence/
+        
+      - title: "■ Creating a text generator with RNNs"
+        url: /project/Creating-Text-Generator-Using-Recurrent-Neural-Network/
+        
+      - title: "■ Running Faster R-CNN on Ubuntu"
+        url: /project/Running-Faster-RCNN-Ubuntu/
+        
+      - title: "■ Installing Caffe on Ubuntu 16.04"
+        url: /project/Installing-Caffe-Ubuntu/
+        
+      - title: "■ Installing OpenCV & Keras"
+        url: /tutorial/Setting-Up-Python-Environment-For-Computer-Vision-And-Machine-Learning/
+        
+      - title: "■ Real time Object Recognition"
+        url: /project/Real-Time-Object-Recognition-part-two/
+        
+      - title: "■ Regularization"
+        url: /tutorial/Regularization/
+       
+      - title: "■ Cross Validation"
+        url: /tutorial/Cross-Validation/
+        
+      - title: "■ What is Machine Learning?"
+        url: /tutorial/Machine-Learning-Definition/

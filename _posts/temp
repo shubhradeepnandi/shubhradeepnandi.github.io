@@ -1,0 +1,84 @@
+---
+title: "Machine Learning Part 11: Non-linear Support Vector Machine - The Kernel Trick"
+header:
+  teaser: tutorials/support-vector-machine/maximum-margin.png
+categories:
+  - Tutorial
+tags:
+  - machine-learning
+  - support vector machine
+  - non linear
+  - kernel trick
+  - svm
+  - classification
+  - regularization
+  - SVC
+  - essential
+---
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+Hello guys. It's been quite a long while since my last tutorial blogpost. It may sound like an excuse, but I've been struggling with finding a new place to live. And I had to say, it's a real problem for a foreigner to find a reasonable apartment in Japan. Luckily, I somehow managed to find one, and I have just moved in for nearly a week. Anyway, the hardest time has gone, and now I can get back to work, to bring to you guys new interesting (and maybe boring as usual) blog posts on Machine Learning.
+
+In the last tutorial post, I told you about one powerful supervised learning algorithm: Support Vector Machine, and we already saw its performance on linear dataset. Of course, SVM couldn't build its own fame if it only out-performs other algorithms on linear dataset. In fact, SVM can bring the same performance when dealing with non-linear dataset as well, with something called: the kernel trick!
+
+$$
+f_1=k(x, l^{(1)})=exp\left(-\frac{\Vert x-l^{(1)}\Vert^2}{2\sigma^2}\right)
+$$
+
+$$
+f_2=k(x, l^{(2)})=exp\left(-\frac{\Vert x-l^{(2)}\Vert^2}{2\sigma^2}\right)
+$$
+
+$$
+f_3=k(x, l^{(3)})=exp\left(-\frac{\Vert x-l^{(3)}\Vert^2}{2\sigma^2}\right)
+$$
+
+New activation function
+
+$$
+h'=\theta'_0 + \theta'_1f_1+\theta'_2f_2+\theta'_3f_3
+$$
+
+Output
+
+$$
+y = \begin{cases} 1,& \text{if $h'_{\theta'}(f) \ge 0, $} \\ 0,&\text{otherwise}\end{cases}
+$$
+
+**How to choose landmarks:**
+
+from 
+$$
+(x^{(1)}, y^{(1)}),(x^{(2)}, y^{(2)}), \dots,(x^{(m)}, y^{(m)})
+$$
+
+choose
+$$
+l^{(1)}=x^{(1)}, l^{(2)}=x^{(2)}, \dots,l^{(m)}=x^{(m)}
+$$
+
+Every \\(x^{(i)}\\):
+$$f^{(i)}_1=\text{similarity}(x^{(i)}, l^{(1)})\\f^{(i)}_2=\text{similarity}(x^{(i)}, l^{(2)})\\\dots\\f^{(i)}_m=\text{similarity}(x^{(i)}, l^{(m)})\\
+$$
+
+Remember, X has n dimensions, but f has m dimensions
+
+New cost function 
+$$
+J=\mathbf{C}\sum^m_{i=1}\left[y^{(i)}\text{cost}_1(\theta'^Tf^{(i)}) + (1-y^{(i)})\text{cost}_0(\theta'^Tf^{(i)})\right] + \frac{1}{2}\sum^m_{j=1}\theta'^2_j
+$$
+
+Recall from previous post:
+* C (or \\(\frac{1}{\lambda}\\)) is large: low bias or high variance -> tends to overfit
+* C is small: high bias or low variance -> underfit
+
+Choose \\(\sigma^2\\)
+* \\(\sigma\\) is large: f changes more smoothly -> high bias, low variance
+* \\(\sigma\\) is small: f changes rapidly -> low bias, high variance
+
+SVM in practice
+* Choose parameter C
+* Choose kernel:
+No kernel: linear kernel
+Gaussian: choose \\(\sigma^2\\)
+
+
