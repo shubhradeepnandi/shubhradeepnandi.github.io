@@ -11,9 +11,9 @@ title                    : "shubhra's ML Page"
 title_separator          : "-"
 name                     : "Shubhradeep Nandi"
 description              : "Page of a AI enthusiast."
-url                      : "https://shubhraML.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/shubhraML.github.io" # the subpath of your site, e.g. "/blog"
-repository               : "ShubhradeepNandi/shubhraML.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://shubhraml.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/shubhraml.github.io" # the subpath of your site, e.g. "/blog"
+repository               : "ShubhradeepNandi/shubhraml.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "teaser.jpg" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -79,9 +79,9 @@ analytics:
 author:
   name             : "Shubhradeep Nandi"
   avatar           : "bio-photo.jpg"
-  bio              : "GearHead & Deep Learning Enthusiast"
-  location         : "Tokyo, Japan"
-  email            : "ahzhong11491@gmail.com"
+  bio              : "ML Enthusiast"
+  location         : "Bengaluru, India"
+  email            : "shubhradeepnandi@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
