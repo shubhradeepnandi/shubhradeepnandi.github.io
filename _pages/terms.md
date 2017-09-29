@@ -5,26 +5,26 @@ title: "Terms and Privacy Policy"
 modified: 2016-10-01
 ---
 
-1. **Acceptance The Use Of [Chun's Machine Learning Page](https://chunml.github.io/) Terms and Conditions**   
-Your  access  to  and  use  of  [Chun's Machine Learning Page](https://chunml.github.io/) is  subject exclusively to these Terms and Conditions. You will not use the Website for any purpose that is unlawful or prohibited by these Terms and Conditions. By using  the  Website  you  are  fully  accepting  the  terms,  conditions  and disclaimers contained in this notice. If you do not accept these Terms and Conditions you must immediately stop using the Website.
+1. **Acceptance The Use Of [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) Terms and Conditions**   
+Your  access  to  and  use  of  [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) is  subject exclusively to these Terms and Conditions. You will not use the Website for any purpose that is unlawful or prohibited by these Terms and Conditions. By using  the  Website  you  are  fully  accepting  the  terms,  conditions  and disclaimers contained in this notice. If you do not accept these Terms and Conditions you must immediately stop using the Website.
 
 2. **CREDIT CARD DETAILS**  
-[Chun's Machine Learning Page](https://chunml.github.io/) will never ask for your credit card details and we advice our customers to not enter their credit cards details on [Chun's Machine Learning Page](https://chunml.github.io/) website or by submitting such details in any other form.
+[shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) will never ask for your credit card details and we advice our customers to not enter their credit cards details on [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) website or by submitting such details in any other form.
 
 3. **LEGAL ADVICE**  
-The contents of [Chun's Machine Learning Page](https://chunml.github.io/) website do not constitute advice and should not be relied upon in making or refraining from making, any decision.   
-All material contained on [Chun's Machine Learning Page](https://chunml.github.io/) is provided without any or warranty of any kind. You use the material on [Chun's Machine Learning Page](https://chunml.github.io/) at your own discretion
+The contents of [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) website do not constitute advice and should not be relied upon in making or refraining from making, any decision.   
+All material contained on [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) is provided without any or warranty of any kind. You use the material on [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) at your own discretion
 
 4. **CHANGE OF USE**  
-[Chun's Machine Learning Page](https://chunml.github.io/) reserves the right to:   
-4.1 &nbsp;change or remove (temporarily or permanently) the Website or any part of it without notice and you confirm that [Chun's Machine Learning Page](https://chunml.github.io/) shall not be liable to you for any such change or removal and.   
+[shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) reserves the right to:   
+4.1 &nbsp;change or remove (temporarily or permanently) the Website or any part of it without notice and you confirm that [Chun's Machine Learning Page](https://shubhradeepnandi.github.io/) shall not be liable to you for any such change or removal and.   
 4.2 &nbsp;change these Terms and Conditions at any time, and your continued use of the Website following any changes shall be deemed to be your acceptance of such change.
 
 5. **Links to Third Party Websites**  
-[Chun's Machine Learning Page](https://chunml.github.io/) Website may include links to third party websites that are controlled and maintained by others. Any link to other websites is not an endorsement of such websites and you acknowledge and agree that we are not responsible for the content or availability of any such sites.
+[shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) Website may include links to third party websites that are controlled and maintained by others. Any link to other websites is not an endorsement of such websites and you acknowledge and agree that we are not responsible for the content or availability of any such sites.
 
 6. **COPYRIGHT**  
-6.1 All  copyright,  trade  marks  and  all  other  intellectual  property  rights  in  the Website and its content (including without limitation the Website design, text, graphics and all software and source codes connected with the Website) are owned by or   licensed to [Chun's Machine Learning Page](https://chunml.github.io/) or otherwise used by [Chun's Machine Learning Page](https://chunml.github.io/) as permitted by law.   
+6.1 All  copyright,  trade  marks  and  all  other  intellectual  property  rights  in  the Website and its content (including without limitation the Website design, text, graphics and all software and source codes connected with the Website) are owned by or   licensed to [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) or otherwise used by [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) as permitted by law.   
 6.2 In accessing the Website you agree that you will access the content solely for your personal, non-commercial use. None of the content may be downloaded, copied, reproduced, transmitted, stored, sold or distributed without the prior written consent of the copyright holder. This excludes the downloading, copying and/or printing of pages of the Website for personal, non-commercial home use only.
 
 7. **LINKS TO AND FROM OTHER WEBSITES**  
@@ -37,12 +37,12 @@ All material contained on [Chun's Machine Learning Page](https://chunml.github.i
 
 8. **DISCLAIMERS AND LIMITATION OF LIABILITY**  
 8.1 The Website is provided on an AS IS and AS AVAILABLE basis without any representation or endorsement made and without warranty of any kind whether express or implied, including but not limited to the implied warranties of satisfactory quality, fitness for a particular purpose, non-infringement, compatibility, security and accuracy.   
-8.2 To the extent permitted by law, [Chun's Machine Learning Page](https://chunml.github.io/) will not be liable for any indirect or consequential loss or damage whatever (including without limitation loss of business, opportunity, data, profits) arising out of or in connection with the use of the Website.   
-8.3 [Chun's Machine Learning Page](https://chunml.github.io/) makes no warranty that the functionality of the Website will be uninterrupted or error free, that defects will be corrected or that the Website or the server that makes it available are free of viruses or anything else which may be harmful or destructive.   
-8.4 &nbsp;Nothing in these Terms and Conditions shall be construed so as to exclude or limit the liability of [Chun's Machine Learning Page](https://chunml.github.io/) for death or personal injury as a result of the negligence of [Chun's Machine Learning Page](https://chunml.github.io/) or that of its employees or agents.
+8.2 To the extent permitted by law, [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) will not be liable for any indirect or consequential loss or damage whatever (including without limitation loss of business, opportunity, data, profits) arising out of or in connection with the use of the Website.   
+8.3 [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) makes no warranty that the functionality of the Website will be uninterrupted or error free, that defects will be corrected or that the Website or the server that makes it available are free of viruses or anything else which may be harmful or destructive.   
+8.4 &nbsp;Nothing in these Terms and Conditions shall be construed so as to exclude or limit the liability of [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) for death or personal injury as a result of the negligence of [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) or that of its employees or agents.
 
 9. **INDEMNITY**  
-You agree to indemnify and hold [Chun's Machine Learning Page](https://chunml.github.io/) and its employees and agents harmless from and against all liabilities, legal fees, damages, losses, costs and other expenses in relation to any claims or actions brought against [Chun's Machine Learning Page](https://chunml.github.io/) arising out of any breach by you of these Terms and Conditions or other liabilities arising out of your use of this Website.
+You agree to indemnify and hold [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) and its employees and agents harmless from and against all liabilities, legal fees, damages, losses, costs and other expenses in relation to any claims or actions brought against [shubhradeepnandi's Machine Learning Page](https://shubhradeepnandi.github.io/) arising out of any breach by you of these Terms and Conditions or other liabilities arising out of your use of this Website.
 
 10. **SEVERANCE**  
 If any of these Terms and Conditions should be determined to be invalid, illegal or unenforceable for any reason by any court of competent jurisdiction then such Term or Condition shall be severed and the remaining Terms and Conditions shall survive and remain in full force and effect and continue to be binding and enforceable.
@@ -53,4 +53,4 @@ If you breach these Conditions of Use and we take no action, we will still be en
 12. **GOVERNING LAW**  
 These Terms and Conditions shall be governed by and construed in accordance with the law of Japan and you hereby submit to the exclusive jurisdiction of the Japan courts.
 
-For any further information please email [Chun's Machine Learning Page](mailto:ahzhong11491@gmail.com) Team
+For any further information please email [shubhradeepnandi's Machine Learning Page](mailto:shubhradeepnandi@gmail.com) Team
