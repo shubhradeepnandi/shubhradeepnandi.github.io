@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Part 3: Linear Regression"
+title: "Linear Regression"
 categories:
   - Tutorial
 tags:
