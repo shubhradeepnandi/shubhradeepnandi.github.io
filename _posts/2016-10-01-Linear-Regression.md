@@ -9,16 +9,16 @@ tags:
   - gradient-descent
 ---
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-Here we are again, in the third post of Machine Learning's tutorials. Today I'm gonna tell you about Linear Regression, the most common and understandable learning algorithm. This time I will dig more deeper so that after this post, you will know what actually happened during the learning process. So no more Dogs and Cats today, but algebraic stuff. Yeah, we're gonna work with matrices, from now on. But don't worry, it's not gonna be so hard today.
+Now we are entering the third post of Machine Learning's tutorials. Today I'm gonna tell you about Linear Regression, the most common learning algorithm. This time I will dig more deeper so that after this post, you will know what actually happened during the learning process. So now some algebraic stuff. Yeah, we're gonna work with matrices, from now on. But don't worry, it's not gonna be so hard today.
 As I told you before, we got some training data containing Features and Labels. Features are somewhat distinct which can be used to distinguish between things.
 
 ![Image_1](/images/tutorials/what-is-machine-learning/5.jpg)
 
-Remember this? To recall a little bit, I called 'X' Features, 'y' Labels, and 'a' Prediction. It may get your attention here, but it's just a naming convention, which X is always in uppercase, and y is lowercase.
+Remember this? To recall a little bit, I called 'X' Features, 'y' Labels, and 'a' Prediction. X is always in uppercase, and y is lowercase, naming convention.
 
 So after collecting a great deal of training data (X, y), we have them learned by the computer. Then we show the data which the computer has never seen before, which contains only X this time, and the computer will give us a prediction, called 'a'.
 
-I just helped you to recall about what Machine Learning is. But I think it would be better if you have a further look about Machine Learning on my first post here: [What  is Machine Learning?](https://chunml.github.io/ChunML.github.io/tutorial/Machine-Learning-Definition/){:target="_blank"}
+I just helped you to recall about what Machine Learning is. But I think it would be better if you have a further look about Machine Learning on my first post here: [What  is Machine Learning?](https://shubhradeepnandi.github.io/shubhradeepnandi.github.io/tutorial/Machine-Learning-Definition/){:target="_blank"}
 
 So from the image above, the first thing coming to our minds is, how the computer can compute *y* from *X* during the learning process, and how it can compute prediction *a* from *X*?
 
@@ -34,11 +34,11 @@ In case of Linear Regression, the Activation Function is so simple that it's not
 
 $$
 \begin{align*}
-  h_\theta(X^{(i)})=\theta_0+\sum_{j=1}^m\theta_jX_j^{(i)}=\theta_0+\theta_1X_1^{(i)}+\theta_2X_2^{(i)}+\cdots+\theta_nX_n^{(i)}
+  h_\theta(X^{(i)})=\theta_0+\sum_{j=1}^n\theta_jX_j^{(i)}=\theta_0+\theta_1X_1^{(i)}+\theta_2X_2^{(i)}+\cdots+\theta_nX_n^{(i)}
 \end{align*}
 $$
 
-I'll explain the equation above. First, the superscript and the subscript on each *X*, what do they mean? Imagine we have a training dataset which has 10 examples, each example has 4 features, so the superscript will indicate the *ith* example, and the subscript will indicate the *jth* feature. You will be used to this convention soon, so don't worry if you can't get that right now.
+I'll explain the equation above. First, the superscript and the subscript on each *X*, what do they mean? Imagine we have a training dataset which has i examples, each example has j features, so the superscript will indicate the *ith* example, and the subscript will indicate the *jth* feature. You will be used to this convention soon, so don't worry if you can't get that right now.
 
 For the sake of simplicity, let's consider an example, where we have 10 examples, each example only contains one feature. So the Activation Function will look like this:
 
@@ -205,4 +205,4 @@ As you can see, we now have our straight line which can fit our training data fa
 
 In the next post, I'll continue with the second part on Linear Regression. I'll show you how we can improve the performance of Linear Regression, and we will, finally, using Python's powerful libraries to help us complete the implementation.
 
-That's it for today. Drop me a line if you have any question. See you in the next post!
+Thanks for reading!
