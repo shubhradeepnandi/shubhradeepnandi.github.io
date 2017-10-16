@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Part 5: Underfitting and Overfitting Problems"
+title: "Going Far with Linear Regression"
 header:
   teaser: tutorials/underfit-overfit/poly_2_test.jpg
 categories:
@@ -13,11 +13,9 @@ tags:
   - problems
 ---
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-Here we are again, in the fifth post of Machine Learning tutorial series. Today I will talk about two common problems you may face in Machine Learning: Underfitting and Overfitting. Wait! There is something wrong, isn't it? - You may wonder...
+Today I will dig deeper into Linear Regression, and together we will do some coding. We will improve the quality of the Model. By doing that, I am actually helping you to go into some concept which is more general, and can be applied not only in Linear Regression, but every spot where Machine Learning takes place.
 
-Of course I remember promising you in the previous post, that today I will dig deeper into Linear Regression, and together we will do some coding. Actually, I intended to name today's post "Implementing Linear Regression" or something, but I soon realized that it would be inappropriate. Good news is today's post will mainly focus on implementation of Linear Regression, and what we can do to improve the quality of the Model. By doing that, I am actually leading you to go into some concept which is more general, and can be applied not only in Linear Regression, but every spot which Machine Learning takes place.
-
-That is enough of talking. First, let's get our hands dirty. If you went through my previous post, you would now have everything set up. But if you didn't, you might want to take a look at it here: [Setting Up Python Environment](https://chunml.github.io/ChunML.github.io/tutorial/Setting-Up-Python-Environment-For-Computer-Vision-And-Machine-Learning/){:target="_blank"}.
+If you went through my previous post, you would now have everything set up. But if you didn't, you might want to take a look at it here: [Setting Up Python Environment Computer Vision and Machine Learning(Ubuntu)](https://iidsa.in/tutorial/Setting-Up-Python-Environment-For-Computer-Vision-And-Machine-Learning/){:target="_blank"}.
 
 ### Implementing Linear Regression
 
@@ -35,28 +33,28 @@ import numpy as np
 import matplotlib.pyplot as plt
 {% endhighlight %}
 
-We are not using only *LinearRegression*. We will work with arrays, so here I also imported *numpy* for dealing with arrays. We will also draw some graphs to visualize the data, so that's why I imported *pyplot*, a great module for graph drawing.
+We are not using only *LinearRegression*. We will work with arrays, so here I also imported *numpy* for dealing with arrays. We will also draw some graphs to visualize the data, so that's why I imported *pyplot*, a great module for drawing graphs.
 
 Remember the data I used in the previous post on Linear Regression? I will show it right below for you:
 
 | X       | y           |
 | ------------- |-------------| 
-| 1      | 7 | 
-| 2      | 8 |
-| 3      | 7 |
-| 4      | 13 |
-| 5      | 16 |
-| 6      | 15 |
-| 7      | 19 |
-| 8      | 23 |
-| 9      | 18 |
-| 10      | 21 |
+| 1      | 5 | 
+| 2      | 6 |
+| 3      | 5 |
+| 4      | 10 |
+| 5      | 13 |
+| 6      | 12 |
+| 7      | 16 |
+| 8      | 20 |
+| 9      | 15 |
+| 10      | 17 |
 
 Now let's use that to prepare our training data:
 
 {% highlight python %} 
 X = np.arange(1, 11).reshape(10, 1)
-y = np.array([7, 8, 7, 13, 16, 15, 19, 23, 18, 21]).reshape(10, 1)
+y = np.array([5, 6, 5, 10, 13, 12, 16, 20, 15, 17]).reshape(10, 1)
 {% endhighlight %}
 
 Nearly every Machine Learning library requires data to be formatted in the way which each row is one training example (or testing example), and each column represents one feature's data. So we have to reshape our data accordingly.
@@ -86,10 +84,10 @@ Our training data is quite simple, so the learning process finished so fast as i
 
 {% highlight python %} 
 model.coef_
-array([[ 1.77575758]])
+array([[ 1.59]])
 
 model.intercept_
-array([ 4.93333333])
+array([ 3.13])
 {% endhighlight %}
 
 Obviously, you can get more information through other attributes of model object, but now we will only focus on *coef_*, which stores the weight parameter, and *intercept_*, which stores the bias parameter.
@@ -103,7 +101,7 @@ a = model.coef_ * X + model.intercept_
 Now let's draw all \\(X\\), \\(y\\) and \\(a\\) on the same plot. Here we got a straight line, which fit the data better than what we did before (which is easy to understand, since we only went through 4 iterations).
 
 {% highlight python %} 
-plt.plot(X, y, 'ro', X, a)
+plt.plot(X, y,X,y,'ro',  X, a)
 axes = plt.gca()
 axes.set_ylim([0, 30])
 plt.show()
@@ -126,13 +124,13 @@ We cannot always evaluate something just by seeing it, right? We need something 
 
 And you can see that, our Model now has the accuracy of 85% over the training data. Commonly,  we demand a higher accuracy, let's say 90% or 95%. So by looking at the current accuracy, we can tell that our Model is not performing as we are expecting. So let's think about an improvement. But how can we do that?
 
-Remember I told you about Features in the first [Post](https://chunml.github.io/ChunML.github.io/tutorial/Machine-Learning-Definition/){:target="_blank"}? Features are something we use to distinguish one object from others. So obviously, if we have more Features, then we will likely have a better fit model, since it can receive more necessary information for training. But how we can acquire more Features?
+Remember I told you about Features in the first [Post](https://iidsa.in/tutorial/Machine-Learning-Definition/){:target="_blank"}? Features are something we use to distinguish one object from others. So obviously, if we have more Features, then we will likely have a better fit model, since it can receive more necessary information for training. But how we can acquire more Features?
 
 #### Polynomial Features
 The easiest way to add more Features, is to computing *polynomial features* from the provided features. It means that if we have \\(X\\), then we can use \\(X^2\\), \\(X^3\\), etc as additional features. So let's use this approach and see if we can improve the current Model. First, we have to modify our \\(X\\) matrix by adding \\(X^2\\):
 
 {% highlight python %} 
-X = np_c[X, X**2]
+X = np.c_[X, X**2]
 X
 array([[   1,    1],
        [   2,    4],
@@ -150,12 +148,12 @@ Similar to previous step, let's train our new Model, then compute the prediction
 
 {% highlight python %} 
 model.fit(X, y)
-x = np.arange(1, 11, 0.1)
-x = np.c_[x, x**2]
+x = np.arange(1, 11)
+x = np.c_[x, x**2, x**3]
 a = np.dot(X, model.coef_.transpose()) + model.intercept_
 {% endhighlight %}
 
-Mathematically, we will now have \\(a=\theta_0 + \theta_1X + \theta_2X^2\\). Note that now we have more complicated matrix *X*, so we will have to use the *dot* function. An error will occur if we just use the multiply operator like above. I also created a new \\(x\\) variable, which ranges from 1 to 10, but with 0.1 step. Use the new \\(x\\) to compute \\(a\\) will result in a smoother graph of \\(a\\), since \\(a\\) is no longer a straight line anymore.
+Mathematically, we will now have \\(a=\theta_0 + \theta_1X + \theta_2X^2\\). Note that now we have more complicated matrix *X*, so we will have to use the *dot* function. An error will occur if we just use the multiply operator like above.
 
 Now let's plot things out and see what we got with new feature matrix:
 
@@ -170,16 +168,16 @@ As you can see, now we obtain a curved line, which seems to fit our training dat
 
 {% highlight python %} 
 model.score(X, y)
-0.87215506914951546
+0.90
 {% endhighlight %}
 
-You see that? Now we got a new accuracy of 87%, which is a huge improvement right? At this point, you may think that we can improve it a lot more by continuing to add more polynomial features to it. Well, don't guess. Let's just do it. This time we will add up to degree 9.
+You see that? Now we got a new accuracy of 90%, which is a huge improvement right? At this point, you may think that we can improve it a lot more by continuing to add more polynomial features to it. Well, don't guess. Let's just do it. This time we will add up to degree 7.
 
 {% highlight python %} 
 X = np.arange(1, 11)
-X = np.c_[X, X**2, X**3, X**4, X**5, X**6, X**7, X**8, X**9]
-x = np.arange(1, 11, 0.1)
-x = np.c_[x, x**2, x**3, x**4, x**5, x**6, x**7, x**8, x**9]
+X = np.c_[X, X**2, X**3, X**4, X**5, X**6, X**7]
+x = np.arange(1, 11)
+x = np.c_[x, x**2, x**3, x**4, x**5, x**6, x**7]
 
 model.fit(X, y)
 a = np.dot(x, model.coef_.transpose()) + model.intercept_
@@ -196,12 +194,12 @@ Now we just obtained a new curve which fit our training data perfectly. Let's us
 
 {% highlight python %} 
 model.score(X, y)
-0.99992550472904074
+0.99
 {% endhighlight %}
 
 Wow, let's see what we have here, an accuracy of 100%. This is real magic, you may think.
 
-But that is just where the tragic begins...
+But that is just where the tragedy begins...
 
 ### OVERFITTING & UNDERFITTING
 
@@ -227,7 +225,7 @@ plt.show()
 
 ![full_data](/images/tutorials/underfit-overfit/full_data.jpg)
 
-Let's see what happens if we use the Model obtained from degree 9 polynomial features:
+Let's see what happens if we use the Model obtained from degree 7 polynomial features:
 
 {% highlight python %} 
 plt.plot(X, y, 'ro', x[:, 0], a)
@@ -238,7 +236,7 @@ plt.show()
 
 ![poly_9_overfit](/images/tutorials/underfit-overfit/poly_9_overfit.jpg)
 
-Do you see what I am seeing? What a tragic! It doesn't seem to fit the new data at all! We don't even feel the need of computing the accuracy on the new data! So what the hell this is all about?
+Do you see what I am seeing? What a tragedy! It doesn't seem to fit the new data at all! We don't even feel the need of computing the accuracy on the new data! So what the hell this is all about?
 
 As I told you before, in the first post, that we only provided a fixed set of training data, and the Model will have to deal with new data which it has never seen before. New data, which may vary in unpredictable way in real life, penalized our trained Model this time! In Machine Learning term, we call it **OVERFITTING** problem (or High Variance). Overfitting, as the name is self-explained itself, means that the Model fits the data very well when we prodived a set of data containing a lot of features. We can see that the Model tends to memorize the data, rather than to learn from it, which makes it unable to predict the new data.
 
@@ -278,7 +276,6 @@ x = np.arange(1, 16, 0.1)
 x = np.c_[x, x**2]
 model.fit(X[:10], y[:10])
 model.score(X[10:], y[10:])
--0.51814820280729812
 
 a = np.dot(x, model.coef_.transpose()) + model.intercept_
 plt.plot(X[:, 0], y, 'ro', x[:, 0], a)
@@ -292,12 +289,11 @@ plt.show()
 #### Model 3
 {% highlight python %} 
 X = np.arange(1, 16).reshape(15, 1)
-X = np.c_[X, X**2, X**3, X**4, X**5, X**6, X**7, X**8, X**9]
+X = np.c_[X, X**2, X**3, X**4, X**5, X**6, X**7]
 x = np.arange(1, 16, 0.1)
-x = np.c_[x, x**2, x**3, x**4, x**5, x**6, x**7, x**8, x**9]
+x = np.c_[x, x**2, x**3, x**4, x**5, x**6, x**7]
 model.fit(X[:10], y[:10])
 model.score(X[10:], y[10:])
--384608869887696.81
 
 a = np.dot(x, model.coef_.transpose()) + model.intercept_
 plt.plot(X[:, 0], y, 'ro', x[:, 0], a)
@@ -316,4 +312,4 @@ The second model may not fit as well as the third model, but it is the one that 
 
 So today, through implementing Linear Regression, I led you through the most common problems you may face when working with Machine Learning, which are *Underfitting* and *Overfitting*. I also showed you the easiest way to avoid those problems, which is always splitting the dataset into two parts: one for training purpose, and one for testing.
 
-Hope you find today's post helpful and you now put a further step into Machine Learning world, I think. There is no stopping as you has gone this far. In the next post, I will continue with **Logistic Regression**, which is an extremely important algorithm that you must understand, because it is the key which leads you to the most powerful learning technique nowadays: Neural Network. So stay updated, and I will be with you soon. See you!
+Hope you find this post helpful and put a further step into Machine Learning world. There is no stopping as you have gone this far. In the next post, I will continue with **Logistic Regression**, it is the key which leads you to the most powerful learning technique nowadays: Neural Network. So stay updated, and I will be with you soon. See you!
