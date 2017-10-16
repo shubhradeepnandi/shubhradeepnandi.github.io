@@ -24,7 +24,7 @@ So, in my previous blog post, I told you about how to create a simple text gener
 
 As you already saw in my previous post, inputs are actually sequences of characters, and each output was simply the corresponding input shifted by one character to the right. Obviously, you can see that each pair of input sequence and output sequence has the same length. Then, the network was trained using the famous Harry Potter as training dataset and as a result, the trained model could generate some great J.K. Rowling-style paragraphs. If you haven't read my previous post yet, please take a look at it by the link below (make sure you do before moving on):
 
-* [Creating A Text Generator Using Recurrent Neural Network](https://chunml.github.io/ChunML.github.io/project/Creating-Text-Generator-Using-Recurrent-Neural-Network/){:target="_blank"}
+* [Creating A Text Generator Using Recurrent Neural Network](http://iidsa.in/project/Creating-Text-Generator-Using-Recurrent-Neural-Network/){:target="_blank"}
 
 But here comes a big question: What if input sequence and output sequence have different lengths?
 
@@ -62,8 +62,6 @@ You might get this now. And that's why it is called **zero padding**. In fact, w
 We are half way there! We now know all we need to know about the-state-of-the-art Sequence to Sequence Learning. I can't help jumping right into Implementation section. Neither can you, right?
 
 ### Implementation
-
-(You can find the whole source files on my GitHub repository here: [seq2seq](https://github.com/ChunML/seq2seq){:target="_blank"})
 
 So, now we are here, finally, right in the Implementation section. Working with NLP problems is literally abstract (than what we did in Computer Vision problems, which we could at least have some visualization). Even worse, deep neural network in common is kind of abstract itself, so it seems that thing's gonna get more complicated here. That's the reason why I decided not to dig into details in the previous section, but to explain it along with the corresponding part in the code instead so that you won't find it difficult to understand the abstract terms (at least I think so). And now, let's get your hands dirty!
 

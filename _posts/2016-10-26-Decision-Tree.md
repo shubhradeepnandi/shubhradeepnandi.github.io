@@ -13,7 +13,7 @@ tags:
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 Hello guys, I'm here with you again! So we have made it to the 8th post of the Machine Learning tutorial series. The topic of today's post is about **Decision Tree**, an algorithm that is widely used in classification problems (and sometimes in regression problems, too). *Decision Tree* is well-known not only for its great performance on classification, but also for its easy-to-understand algorithm.
 
-As we have already seen up to now, in [Linear Regression](https://chunml.github.io/ChunML.github.io/tutorial/Linear-Regression/){:target="_blank"} and [Logistic Regression](https://chunml.github.io/ChunML.github.io/tutorial/Logistic-Regression/){:target="_blank"} tutorials, understanding how a learning algorithm works is somehow irritated. We got to go through boring theories, boring mathematical explanations and so on. Although I tried my best to make the explanation as simple as I can, but you know, functions is still functions, matrices are still matrices, there is no other way to get rid of those terms. But you won't have to go through that pain today. *Decision Tree* can totally be explained using human-understandable natural language. So keep reading, okay?
+As we have already seen up to now, in [Linear Regression](http://iidsa.in/tutorial/Linear-Regression/){:target="_blank"} and [Logistic Regression](http://iidsa.in/tutorial/Logistic-Regression/){:target="_blank"} tutorials, understanding how a learning algorithm works is somehow irritated. We got to go through boring theories, boring mathematical explanations and so on. Although I tried my best to make the explanation as simple as I can, but you know, functions is still functions, matrices are still matrices, there is no other way to get rid of those terms. But you won't have to go through that pain today. *Decision Tree* can totally be explained using human-understandable natural language. So keep reading, okay?
 
 And before we get started, it's great to know that we have made it to the 8th post of the Machine Learning tutorial series. If you take a look back, I'm quite sure you will be surprised by how much you have progressed. We have learned two learning algorithms: *Linear Regression* and *Logistic Regression* respectively. We have worked on some simple dataset and visualized how your Model performed. At the moment, I'm quite sure that you are now familiar with Machine Learning. So in this post, we will use a more complicated set of data and see how our learning algorithms handle it.
 
@@ -193,7 +193,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.cross_validation import cross_val_score
 {% endhighlight %}
 
-If you went through my last tutorial, you may now know a proper way to evaluate the performance of a Machine Learning Model using the *cross_val_score* method. And if you didn't, you can always give it a look here: [Cross Validation](https://chunml.github.io/ChunML.github.io/tutorial/Cross-Validation/){:target="_blank"}.
+If you went through my last tutorial, you may now know a proper way to evaluate the performance of a Machine Learning Model using the *cross_val_score* method. And if you didn't, you can always give it a look here: [Cross Validation](http://iidsa.in/tutorial/Cross-Validation/){:target="_blank"}.
 
 Next, let's using *make_classification*, a method provided by scikit-learn library to generate data for classification problems.
 

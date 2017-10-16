@@ -20,9 +20,9 @@ Hi, everyone! Welcome back to my Machine Learning page today. I have been playin
 
 Before getting into the details, for ones that missed my old posts on Caffe, you can check it out anytime, through the links below:
 
-* [Installing Caffe on Ubuntu (CPU_ONLY)](https://chunml.github.io/ChunML.github.io/project/Installing-Caffe-CPU-Only/){:target="_blank"}
+* [Installing Caffe on Ubuntu (CPU_ONLY)](http://iidsa.in/project/Installing-Caffe-CPU-Only/){:target="_blank"}
 
-* [Installing Caffe on Ubuntu (GPU)](https://chunml.github.io/ChunML.github.io/project/Installing-Caffe-Ubuntu/){:target="_blank"}
+* [Installing Caffe on Ubuntu (GPU)](http://iidsa.in/project/Installing-Caffe-Ubuntu/){:target="_blank"}
 
 Now, let's get down to business. In today's post, I will mainly tell you about two points below:
 

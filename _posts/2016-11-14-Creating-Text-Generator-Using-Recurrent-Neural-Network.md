@@ -116,9 +116,9 @@ As I mentioned earlier in this post, there are quite a lot of excellent posts on
 
 If you don't have Keras installed on your machine, just give the link below a click. The installation only takes 20 minutes (max):
 
-* [Installing OpenCV & Keras](https://chunml.github.io/ChunML.github.io/tutorial/Setting-Up-Python-Environment-For-Computer-Vision-And-Machine-Learning/){:target="_blank"}
+* [Installing OpenCV & Keras](http://iidsa.in/tutorial/Setting-Up-Python-Environment-For-Computer-Vision-And-Machine-Learning/){:target="_blank"}
 
-Now, let's get down to business. For sake of simplicity, I will divide the code into four parts and dig into each part one at a time. Of course I will omit some lines used for importing or argument parsing, etc. You can find the full source file in my GitHub here: [Text Generator](https://github.com/ChunML/text-generator){:target="_blank"}. Now let's go into the first part: preparing the data.
+Now, let's get down to business. For sake of simplicity, I will divide the code into four parts and dig into each part one at a time. Of course I will omit some lines used for importing or argument parsing, etc. Now let's go into the first part: preparing the data.
 
 **1. Prepare the training data**
 

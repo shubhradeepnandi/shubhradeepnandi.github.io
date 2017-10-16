@@ -24,11 +24,11 @@ So, let's get down to business. Among those comments I received, some of you ask
 
 Before we get started, make sure you have already set things up. It means that you have cloned from Faster R-CNN Github repository, compiled and successfully run the demo. Or, you probably want to take a look at my previous post, where I covered all the necessary steps I have just mentioned:
 
-* [Compiling and Running Faster R-CNN on Ubuntu (CPU Mode)](https://chunml.github.io/ChunML.github.io/project/Running-Faster-RCNN-Ubuntu/){:target="_blank"}
+* [Compiling and Running Faster R-CNN on Ubuntu (CPU Mode)](http://iidsa.in/project/Running-Faster-RCNN-Ubuntu/){:target="_blank"}
 
 In case you have a PC with GPU, which is strongly recommended... No, it's not just recommended. GPU is definitely a MUST if you want to train Faster R-CNN. And below is the link to setup Faster R-CNN with GPU and the problem I faced, which caused me unable to use cuDNN with Faster R-CNN:
 
-* [Solving problem when running Faster R-CNN on GTX 1070](https://chunml.github.io/ChunML.github.io/project/Problem-Faster-RCNN-GPU/){:target="_blank"}
+* [Solving problem when running Faster R-CNN on GTX 1070](http://iidsa.in/project/Problem-Faster-RCNN-GPU/){:target="_blank"}
 
 So now let's suppose you have successfully compiled and run the demo file. Next we will talk about how to make one step further: to train your own model.
 

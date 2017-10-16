@@ -14,7 +14,7 @@ tags:
 
 So here we are again, in the second part of my Real time Object Recognition project. In the previous post, I showed you how to implement pre-trained VGG16 model, and have it recognize my testing images.
 
-You can take a look at the first part here: [Real Time Object Recognition (Part 1)](https://chunml.github.io/ChunML.github.io/project/Real-Time-Object-Recognition-part-one/){:target="_blank"}.
+You can take a look at the first part here: [Real Time Object Recognition (Part 1)](http://iidsa.in/project/Real-Time-Object-Recognition-part-one/){:target="_blank"}.
 The model performed pretty well, although I didn't even have to do any further pre-processing (such as object localization, or image enhancement, etc).
 
 In the next step, I will use the same model, to predict object from a continuous input, such as video file or input from a camera. If you have ever done some work with Computer Vision before, you will see find it extremely easy. Let's say, just a slight improvement over the last one. Yeah, that's true!
@@ -115,7 +115,7 @@ Tired of reading? So sorry to make it long. I'll show you the result I got right
 
 Let's talk a little bit about the result above. You can see that, despite of the bad light condition (my room is only equipped with one damn yellow light!), the model still performed pretty well and totally satisfied me. Sometimes it got wrong (couldn't recognize my G-Shock, or having trouble in distinguishing whether it was a screen or a TV!), but that was far more than expected.
 
-And finally, here's the code in case you need: [Object Recognition Code](https://github.com/ChunML/DeepLearning){:target="_blank"}. Most of them was cloned from François Chollet's repository. I just coded two files below:
+I just coded two files below:
 
 * For recognizing images seperately:
 test_imagenet.py 

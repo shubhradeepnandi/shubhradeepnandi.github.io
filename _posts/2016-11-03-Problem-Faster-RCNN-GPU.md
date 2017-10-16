@@ -20,11 +20,11 @@ Hello guys, it's great to be here with you today (why do I keep saying that bori
 
 You might read my last post about my experience in installing Caffe on Ubuntu 16.04, with CUDA and cuDNN to make use of the great power of the GPU. Yeah, we went through so many steps to install so many necessary things. And fortunately, things worked flawlessly in the end. For ones who haven't read it yet, you can find it right below:
 
-* [Installing Caffe on Ubuntu 16.04 ](https://chunml.github.io/ChunML.github.io/project/Installing-Caffe-Ubuntu/){:target="_blank"}
+* [Installing Caffe on Ubuntu 16.04 ](http://iidsa.in/project/Installing-Caffe-Ubuntu/){:target="_blank"}
 
 And as you can guess, the next thing I did right after having Caffe installed on my machine, is grabbing the latest Python implementation of Faster R-CNN. I once talked about how to compile and run Faster R-CNN on Ubuntu in CPU Mode, you can refer to it here:
 
-* [Compiling and Running Faster R-CNN on Ubuntu (CPU Mode)](https://chunml.github.io/ChunML.github.io/project/Running-Faster-RCNN-Ubuntu/){:target="_blank"}
+* [Compiling and Running Faster R-CNN on Ubuntu (CPU Mode)](http://iidsa.in/project/Running-Faster-RCNN-Ubuntu/){:target="_blank"}
 
 Obviously, once you are able to run Faster R-CNN in CPU Mode, making it work with GPU may not sound like a big deal. Why? Because you had successfully installed Caffe, which means you had gone through all the most confusing steps to get CUDA and cuDNN libraries ready. But to tell the truth, I failed to, on the first try!
 

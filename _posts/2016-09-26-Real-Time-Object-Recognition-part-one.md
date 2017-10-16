@@ -29,7 +29,7 @@ Writing it all in one post may hurt, so I separate this project into two parts l
 * Part 1: Go through the folder containing the images, recognize object in each.
 * Part 2: Real time object recognition through input from camera
 
-Before I begin, let's talk a little bit about how Machine Learning works. I had post about what Machine Learning exactly is, and how it exactly works here: [What is Machine Learning?](https://chunml.github.io/tutorial/Machine-Learning-Definition/){:target="_blank"}
+Before I begin, let's talk a little bit about how Machine Learning works. I had post about what Machine Learning exactly is, and how it exactly works here: [What is Machine Learning?](http://iidsa.in/tutorial/Machine-Learning-Definition/){:target="_blank"}
 
 The main part of any Machine Learning system, is the Model. It contains the algorithms and all the associated parameters. A good Model will produce a good prediction. Because of that, the training process (i.e. the process which produces the Model) can be heavily computational and take a lot of resources (you know, RAM and memories to store the parameters).
 

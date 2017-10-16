@@ -28,7 +28,7 @@ SVM is a supervised learning algorithm which is mostly used for classification p
 
 And you may remember that I had made a post about one learning algorithm which can give awesome result when dealing with linear dataset. Yeah, I'm talking about Logistic Regression. So, to have a better understanding about Linear SVM, it's a great idea to recall a little bit about Logistic Regression, and see what they differ from each other. For ones who haven't skimmed through my post about Logistic Regression, you can find it right below:
 
-* [Machine Learning Part 6: Logistic Regression](https://chunml.github.io/ChunML.github.io/tutorial/Logistic-Regression/){:target="_blank"}
+* [Machine Learning Part 6: Logistic Regression](http://iidsa.in/tutorial/Logistic-Regression/){:target="_blank"}
 
 When we talk about Logistic Regression, we may all think of the sigmoid function, which we use as the activation function. Below is what a sigmoid function looks like:
 
@@ -90,7 +90,7 @@ $$
 
 Now, the new cost function looks like above. We can see that it has the form of: \\(\mathbf{A}+\lambda\mathbf{B}\\). Let's talk a little bit about the \\(\lambda\\) term, as we call it the weight of regularization, which control how much we want to regularize our parameters. If it's large, then our parameters will become much smaller and vice versa. Skipped my previous post? You can find it right below:
 
-* [Machine Learning Part 9: Regularization](https://chunml.github.io/ChunML.github.io/tutorial/Regularization/)
+* [Machine Learning Part 9: Regularization](http://iidsa.in/tutorial/Regularization/)
 
 Now how about saying we want to put more weight on the actual cost value? The answer may be: just decrease \\(\lambda\\). It's a little bit confusing to someone, so instead of using the form of \\(\mathbf{A}+\lambda\mathbf{B}\\), many people prefer the \\(\mathbf{C}\mathrm{A}+\mathrm{B}\\) form. So now we can say, if we want to emphasize on the actual cost value, we can do it by increasing \\(\mathbf{C}\\). And that way of expression is also the standard which the scikit-learn library are using. For example, here's the full description when initializing Logistic Regression I grabbed on scikit-learn's homepage:
 

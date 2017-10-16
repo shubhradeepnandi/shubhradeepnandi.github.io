@@ -18,7 +18,7 @@ tags:
 
 It's great to be with all you guys again in today's post. As you already knew, it's been a while since I built my own desktop for Deep Learning. Or for ones who missed that post, you can have a look at my build here: 
 
-* [Building up my own machine for Deep Learning](https://chunml.github.io/ChunML.github.io/project/Building-Desktop-For-Deep-Learning/){:target="_blank"}
+* [Building up my own machine for Deep Learning](http://iidsa.in/project/Building-Desktop-For-Deep-Learning/){:target="_blank"}
 
 And in the last few days, I was like a kid who had just received some new toys from his parents (I bought my desktop by my own money, though). I was so excited that I couldn't wait any longer to get started. So right after I put all the parts right into their places, the first thing I got to do was installing the OS, of course. I'm running Ubuntu 16.04 on my laptop, so I couldn't find any reason for not installing the latest Long-Term-Support version of Ubuntu on my desktop. The OS installation was quite easy, especially Ubuntu or any Linux based OS. The next thing to do was to install the necessary drivers. Actually nearly all the drivers were installed during the installation of Ubuntu, so I only had to manually install the GTX 1070 driver, but it was a piece of cake and you would laugh at me if I write it down here. In this post, I want to talk about the three main points below:
 
@@ -31,7 +31,7 @@ As you may notice that I once talked about the first one in my previous posts. A
 
 The first thing to do before installing Caffe was to install OpenCV, because I wanted to compile Caffe with OpenCV. Installing OpenCV wasn't a big deal at all. You can refer at my previous post here:
 
-* [Installing OpenCV & Keras](https://chunml.github.io/ChunML.github.io/tutorial/Setting-Up-Python-Environment-For-Computer-Vision-And-Machine-Learning/){:target="_blank"}
+* [Installing OpenCV & Keras](http://iidsa.in/tutorial/Setting-Up-Python-Environment-For-Computer-Vision-And-Machine-Learning/){:target="_blank"}
 
 To make it more convenient for you without having to switch between your browser tabs, I think it's better if I write out the steps for installing OpenCV in this post, too.
 
@@ -124,7 +124,7 @@ Unlike the previous post, I will skip the installation of Keras this time, and f
 
 So now we have OpenCV 3.0 successfully installed. Next we will continue with Caffe. I'm assuming that you have at least one GPU installed. If you don't, please refer to the post below:
 
-* [Installing Caffe on Ubuntu (CPU-ONLY)](https://chunml.github.io/ChunML.github.io/project/Installing-Caffe-CPU-Only/){:target="_blank"}
+* [Installing Caffe on Ubuntu (CPU-ONLY)](http://iidsa.in/project/Installing-Caffe-CPU-Only/){:target="_blank"}
 
 This time we want to make use the power of GPU, we can tell Caffe that we want to use GPU, by commenting out the *CPU_ONLY* option, do you remember that? Unfortunately, it's not that simple. Caffe is just a framework which helps us handle the Network, which means that with Caffe, we can define the Network structure, we can define rules, then Caffe will train and evaluate our Model. In fact, Caffe makes use of CUDA, a superb library provided by NVIDIA, to handle the communication with our GPU.
 

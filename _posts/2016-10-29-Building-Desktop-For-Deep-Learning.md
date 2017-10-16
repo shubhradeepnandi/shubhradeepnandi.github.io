@@ -16,7 +16,7 @@ tags:
 Hello guys, it's me again being here with all you guys today. There will be no tutorial in this post, so at first I'm sorry for that. But Halloween is coming to town, right? The weather is good out there, too. So there's no reason to stay at home spending time on some boring Machine Learning stuff, right? But I did! I spent a whole day on building my own desktop for Deep Learning!
 
 Of course I still remember telling you about using *g2.2xlarge* instance of Amazon Web Service. For ones who are considering using some GPU instance with a reasonable price, please have a look at my previous post:  
-[Using AWS EC2 Instance](https://chunml.github.io/ChunML.github.io/project/Prepare-AWS-Instance/){:target="_blank"}.
+[Using AWS EC2 Instance](http://iidsa.in/project/Prepare-AWS-Instance/){:target="_blank"}.
 
 The main reason why I decided to build my own machine is just simple: I needed a more powerful GPU. Of course I can change to *g2.8xlarge* instance but I will soon get broke. Having a desktop at home also makes sense for one who mainly works with images and videos like me, since I can visualize the output without writing more codes to use the raw results from EC2 instance.
 

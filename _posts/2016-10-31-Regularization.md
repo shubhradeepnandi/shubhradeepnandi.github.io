@@ -13,7 +13,7 @@ tags:
   - essential
 ---
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-Welcome back to my 9th tutorial on Machine Learning! I have been kept busy in last weekends, struggling in getting my desktop ready for Deep Learning. You may consider giving that post a look if you are planning to build your own "Monster" too: [Building up my own machine for Deep Learning](https://chunml.github.io/ChunML.github.io/project/Building-Desktop-For-Deep-Learning/){:target="_blank"}.
+Welcome back to my 9th tutorial on Machine Learning! I have been kept busy in last weekends, struggling in getting my desktop ready for Deep Learning. You may consider giving that post a look if you are planning to build your own "Monster" too: [Building up my own machine for Deep Learning](http://iidsa.in/project/Building-Desktop-For-Deep-Learning/){:target="_blank"}.
 
 Of course I got a lot to tell you about things I've been doing with my new desktop. But it will be a little bit selfish of mine and unfair to all of you if I let dust cover my Machine Learning tutorial series. So let's say, I'm back on track. And today, I will talk about **Regularization**, a technique to deal with Overfitting problem. You may still remember that I mentioned eariler in previous posts, Overfitting is a big headache in all Machine Learning problems. Beside Cross Validation that I told you before, **Regularization** is a must-know technique that you will nearly apply in all of your Machine Learning problems. Furthermore, applying **Regularization** is a default setting in all algorithms provided by *scikit-learn* library.
 
@@ -41,7 +41,7 @@ $$
 h_2(x)=\frac{x^4}{5}-\frac{7x^3}{5}+x^2+\frac{31x}{5}-6
 $$
 
-Does it sound similar to you? I once told you about one way to improve the performance of Linear Regression model, that is adding polynomial features. You can refer it here: [Underfitting and Overfitting Problems](https://chunml.github.io/ChunML.github.io/tutorial/Underfit-Overfit/){:target="_blank"}. You knew that by adding more features, we will have a more well learned model which can fit our data far better. But everything has its drawback, if we add so many features, we will be purnished with Overfitting. That was what I told you in the earlier tutorial. Not so hard to recall, right?
+Does it sound similar to you? I once told you about one way to improve the performance of Linear Regression model, that is adding polynomial features. You can refer it here: [Underfitting and Overfitting Problems](http://iidsa.in/tutorial/Underfit-Overfit/){:target="_blank"}. You knew that by adding more features, we will have a more well learned model which can fit our data far better. But everything has its drawback, if we add so many features, we will be purnished with Overfitting. That was what I told you in the earlier tutorial. Not so hard to recall, right?
 
 If you look at each function's equation, you will find that the green curve has larger coefficients, and that's the main caution of Overfitting. As I mentioned before, Overfitting can be interpreted that our model fits the dataset so well, which it seems to memorize the data we showed rather than actually learn from it. Intuitively, having large coefficients can be seen as an evidence of memorizing the data. For example, we got some noises in our training dataset, where the data's magnitude is far difference than the others, those noises will cause our model to put more weight into the coefficient of higher degree, and what we received is a model that overfits our training data!
 
@@ -57,7 +57,7 @@ $$
 J = \frac{1}{2m}\sum_{i=1}^m(h_\theta(X^{(i)})-y^{(i)})^2
 $$
 
-I once introduced the MSE cost function before in [Logistic Regression](https://chunml.github.io/ChunML.github.io/tutorial/Linear-Regression/){:target="_blank"} tutorial. And as you know, the objective of learning is to minimize that MSE function. It means that our parameters can be updated in anyway, just to lower the MSE value. And as I told you above, the larger our parameters become, the higher chance our Model overfits the data. So the question is: can we not only minimize the cost function, but also restrict the parameters not to become too large? The answer is: we **CAN**, by adding the regularization term like below:
+I once introduced the MSE cost function before in [Logistic Regression](http://iidsa.in/tutorial/Linear-Regression/){:target="_blank"} tutorial. And as you know, the objective of learning is to minimize that MSE function. It means that our parameters can be updated in anyway, just to lower the MSE value. And as I told you above, the larger our parameters become, the higher chance our Model overfits the data. So the question is: can we not only minimize the cost function, but also restrict the parameters not to become too large? The answer is: we **CAN**, by adding the regularization term like below:
 
 $$
 J = \frac{1}{2m}\sum_{i=1}^m(h_\theta(X^{(i)})-y^{(i)})^2+\frac{\lambda}{2m}\sum_{j=1}^n\theta_j^2

@@ -15,7 +15,7 @@ tags:
 
 So today I am gonna tell you about how to compile and run Faster R-CNN on Ubuntu in CPU Mode. But there is a big chance that many of you may ask: What the hell is Faster R-CNN?
 
-In my previous posts, I have done a project Real-time Object Recognition (you can find it here: [Real-time Object Recognition](https://chunml.github.io/ChunML.github.io/project/Real-Time-Object-Recognition-part-one/){:target="_blank"}). The result received was pretty good, but as you might notice, that it got a problem (a big problem). The problem is that the trained Model could recognize one object per frame. So if I want it to recognize two or more objects (and even tell me where each of them locates), it will raise the white flag!
+In my previous posts, I have done a project Real-time Object Recognition (you can find it here: [Real-time Object Recognition](http://iidsa.in/project/Real-Time-Object-Recognition-part-one/){:target="_blank"}). The result received was pretty good, but as you might notice, that it got a problem (a big problem). The problem is that the trained Model could recognize one object per frame. So if I want it to recognize two or more objects (and even tell me where each of them locates), it will raise the white flag!
 
 So it came to my next mission that I have to find a way to deal with Object Detection. Of course I knew some of them before, but what I wanted is something which applied Convolutional Neural Network. Among some great papers people had done out there, I chose Faster R-CNN.
 
@@ -100,7 +100,7 @@ Next, we will compile **caffe** and **pycaffe**. You may remember that I made a 
 cd ../caffe-fast-rcnn
 {% endhighlight %}
  
-Similar to what we did with **caffe** before, this time we are likely to make some change to the *Makefile* files. But actually, they are just files which tell the compile how to compile things (like where to look for include files, library files, etc), so we can re-use our old *Makefile* which we have already modified. In case you haven't had a look at my old post yet, you can find it here: [Installing Caffe on Ubuntu](https://chunml.github.io/ChunML.github.io/project/Installing-Caffe-CPU-Only/){:target="_blank"}.
+Similar to what we did with **caffe** before, this time we are likely to make some change to the *Makefile* files. But actually, they are just files which tell the compile how to compile things (like where to look for include files, library files, etc), so we can re-use our old *Makefile* which we have already modified. In case you haven't had a look at my old post yet, you can find it here: [Installing Caffe on Ubuntu](http://iidsa.in/project/Installing-Caffe-CPU-Only/){:target="_blank"}.
 
 So what we are gonna do is going to where we placed **caffe**, copy the *Makefile* and *Makefile.config* files, and paste them into the *caffe-fast-rcnn* folder.
 
