@@ -18,7 +18,7 @@ Remember this? To recall a little bit, I called 'X' Features, 'y' Labels, and 'a
 
 So after collecting a great deal of training data (X, y), we have them learned by the computer. Then we show the data which the computer has never seen before, which contains only X this time, and the computer will give us a prediction, called 'a'.
 
-I just helped you to recall about what Machine Learning is. But I think it would be better if you have a further look about Machine Learning on my first post here: [What  is Machine Learning?](https://shubhradeepnandi.github.io/shubhradeepnandi.github.io/tutorial/Machine-Learning-Definition/){:target="_blank"}
+I just helped you to recall about what Machine Learning is. But I think it would be better if you have a further look about Machine Learning on my first post here: [What  is Machine Learning?](http://iidsa.in/tutorial/Machine-Learning-Definition/){:target="_blank"}
 
 So from the image above, the first thing coming to our minds is, how the computer can compute *y* from *X* during the learning process, and how it can compute prediction *a* from *X*?
 

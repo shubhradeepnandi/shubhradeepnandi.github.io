@@ -17,7 +17,7 @@ Before we move on, let's spend a minute to look back on the last post. You now k
 You also know what exactly Learning means. It's the process of Trial-and-Error repeatedly. Trial makes big mistakes in the first time, but help the computer (as well as human's brain) to learn faster, to become more confident on the next time.
 
 Learning is doing something repeatedly, guys. So don't be ashamed to do some revision until you're ready to move on.
-You can find the last tutorial here: [What is Machine Learning?](https://shubhradeepnandi.github.io/tutorial/Machine-Learning-Definition/){:target="_blank"}
+You can find the last tutorial here: [What is Machine Learning?](http://iidsa.in/tutorial/Machine-Learning-Definition/){:target="_blank"}
 
 So, let's get down to business. I'll make it easy for you today. It means today's post won't be such long as the previous one. Even Sachin Tendulkar needs some recovery-day, right?
 

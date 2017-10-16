@@ -15,7 +15,7 @@ tags:
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 Today I will dig deeper into Linear Regression, and together we will do some coding. We will improve the quality of the Model. By doing that, I am actually helping you to go into some concept which is more general, and can be applied not only in Linear Regression, but every spot where Machine Learning takes place.
 
-If you went through my previous post, you would now have everything set up. But if you didn't, you might want to take a look at it here: [Setting Up Python Environment Computer Vision and Machine Learning(Ubuntu)](https://iidsa.in/tutorial/Setting-Up-Python-Environment-For-Computer-Vision-And-Machine-Learning/){:target="_blank"}.
+If you went through my previous post, you would now have everything set up. But if you didn't, you might want to take a look at it here: [Setting Up Python Environment Computer Vision and Machine Learning(Ubuntu)](http://iidsa.in/tutorial/Setting-Up-Python-Environment-For-Computer-Vision-And-Machine-Learning/){:target="_blank"}.
 
 ### Implementing Linear Regression
 
