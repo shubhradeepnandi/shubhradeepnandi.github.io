@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Part 6: Logistic Regression"
+title: "Logistic Regression"
 header:
   teaser: tutorials/logistic-regression/graph_3.png
 categories:
@@ -11,13 +11,9 @@ tags:
   - essential
 ---
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-Hello there, I am back with you today. In the 6th post on Machine Learning tutorials series, I will tell you about Logistic Regression, a very important and must-know algorithm. Before I go any further, there is one thing I want you to be clear at first. The algorithm's name, Logistic Regression, is somehow confusing a little bit, but we are not dealing with a regression problem, but a **classification problem**.
+In the 6th post on Machine Learning tutorials series, I will tell you about Logistic Regression, a very important and must-know algorithm. Before I go any further, there is one thing I want you to be clear at first. The algorithm's name, Logistic Regression, is somehow confusing a little bit, but we are not dealing with a regression problem, but a **classification problem**.
 
 But what is the difference between regression problems and classification problems? - You may ask. I am not a statistical expert, and you may not want any detailed academic explanations, so I will make it simply like below.
-
-A regression problem is where you have a **continuous** dataset of label \\(y\\), and your goal is to make predictions for unlabeled data. Because \\(y\\) is continuous, it can take any value between a specific range. Concretely, if our problem's output range is \\(1 ~ 10\\), then \\(y\\) can be any value between that range, such as \\(1.2, 2.5\\) or even \\(4.23424324\\), etc. A regression problem's graph will mostly look like the graph I showed you in [Linear Regression](http://iidsa.in/tutorial/Linear-Regression/){:target="_blank"} tutorial:
-
-![Update 4](/images/tutorials/linear-regression/7.jpg)
 
 A classification problem, as you may guess, is where our labels \\(y\\) can only take a particular value, or we can say that \\(y\\) is a discrete dataset. For example, if we want to solve a spam mail detecting problem, obviously we will have only two labels which is either *spam* or *non-spam*. Another example, you are a magician who is trying to guess the suit of a randomly picked card, so you only have four choices among Hearts, Diamonds, Clubs and Spades, right? So we are now dealing with a different problem from the one we did before. Our graph will now look like this:
 

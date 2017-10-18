@@ -4,11 +4,13 @@ title: "About"
 excerpt: "All about me."
 ---
 
-Hi there, I'm Shubhradeep Nandi, or you can call me Shubhra.
+My name is Shubhradeep Nandi, and you can call me Shubhra. I currently work as a Data Scientist in an early stage fintech startup.
 
-I graduated from Computer Science and Engineering in India. I did BI and Analytics management diploma from IIM Bangalore. My research during management was primarily focused on devicing analytical prescriptions for Unorganized Retail in India.
 
-I'm currently living and working in Bangalore. I'm a big fan of Automation, Machine Learning and Computer Vision. I'm doing some works on Machine Learning and Computer Vision. I'm also maintaining this blog to share my knowledge about ML and CV, as well as my work on both fields. 
+I graduated with Computer Science and Engineering from a Government Technical University(NERIST). I did my management diploma from IIM Bangalore and purely focussed on statistical analysis, BI, and data science. 
+My research paper during management was on devicing analytical prescriptions for Unorganized Retail in India.
+It was chosen as the Best Research Paper at Jawaharlal Nehru University
 
+I'm currently working in Bangalore. I'm a big fan of Automation, Machine Learning and Computer Vision. I am purely working on Machine Learning and Computer Vision. I also teach and mentor Machine Learning to coporate and Individual enthusiasts. I maintain this blog to share my knowledge about Data Science and ML, as well as my field work. 
 
 Hope this blog help with your learning. And don't hesitate to drop me a line. I'll reply as soon as I can :)
