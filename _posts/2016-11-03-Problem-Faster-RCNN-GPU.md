@@ -119,7 +119,7 @@ def demo(net, image_name):
 Add one line like above inside the *demo* method in *demo.py* file so that we can know the shape of the output scores, then run it again, here's what I received:
 
 {% highlight python %}
-Loaded network /home/chun/py-faster-rcnn/data/faster_rcnn_models/VGG16_faster_rcnn_final.caffemodel
+Loaded network /home/Shubhra's/py-faster-rcnn/data/faster_rcnn_models/VGG16_faster_rcnn_final.caffemodel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Demo for data/demo/000456.jpg
 (300, 21)

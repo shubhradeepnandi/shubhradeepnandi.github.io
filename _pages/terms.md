@@ -17,7 +17,7 @@ All material contained on [shubhradeepnandi's Machine Learning Page](http://iids
 
 4. **CHANGE OF USE**  
 [shubhradeepnandi's Machine Learning Page](http://iidsa.in/) reserves the right to:   
-4.1 &nbsp;change or remove (temporarily or permanently) the Website or any part of it without notice and you confirm that [Chun's Machine Learning Page](http://iidsa.in/) shall not be liable to you for any such change or removal and.   
+4.1 &nbsp;change or remove (temporarily or permanently) the Website or any part of it without notice and you confirm that [Shubhra's Machine Learning Page](http://iidsa.in/) shall not be liable to you for any such change or removal and.   
 4.2 &nbsp;change these Terms and Conditions at any time, and your continued use of the Website following any changes shall be deemed to be your acceptance of such change.
 
 5. **Links to Third Party Websites**  
